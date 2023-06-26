@@ -111,7 +111,7 @@ async def mute(interaction: discord.Interaction, member: discord.Member, reason:
         )
         await interaction.response.send_message(embed=embed, ephemeral=True)
         
-    # Mute bot
+    # Mute a bot
     elif member.bot:
         embed = create_embed(
             couleur="red", 
